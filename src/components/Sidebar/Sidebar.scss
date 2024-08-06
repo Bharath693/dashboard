@@ -17,6 +17,12 @@
       }
     }
 
+    @media screen and (min-width:350px) and (max-width:575px) {
+      .Sidebar-icomMenu {
+        padding: 0px 6px;
+      }
+    }
+
     .Sidebar-icomMenu:first-child {
         color: $iconActive;
         border-left: 2.5px solid $iconActive;
