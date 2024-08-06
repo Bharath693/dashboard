@@ -1,8 +1,8 @@
-import React from 'react'
-import { BarChart, Bar, Rectangle, ResponsiveContainer } from 'recharts';
+import React,{useEffect} from 'react'
+import { BarChart, Bar, Rectangle, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 
-import "./DashboardActivity.scss"
+import "./DashboardActivity.scss";
 
 const DashboardActvity = () => {
 
@@ -16,6 +16,22 @@ const DashboardActvity = () => {
     { name: '21', uv: 3490, pv: 4300, amt: 2100 },
   ];
 
+  useEffect(() => {
+    const originalConsoleError = console.error;
+
+    console.error = (...args) => {
+      if (typeof args[0] === "string" && /defaultProps/.test(args[0])) {
+        return;
+      }
+
+      originalConsoleError(...args);
+    };
+
+    return () => {
+      console.error = originalConsoleError;
+    };
+  }, []);
+  
   return (
     <div className='DashboardActvity'>
        <div className='DashboardActvity-heading'>
@@ -32,11 +48,9 @@ const DashboardActvity = () => {
             bottom: 5,
           }}
         >
-          {/* <CartesianGrid strokeDasharray="3 3" /> */}
-          {/* <XAxis dataKey="name" />
-          <YAxis /> */}
-          {/* <Tooltip />
-          <Legend /> */}
+          {/* <XAxisWrapper dataKey='name'/> */}
+          <XAxis dataKey='name'/>
+          <YAxis />
           <Bar dataKey="pv" fill="#8884d8"  />
           <Bar dataKey="uv" fill="#8884d8" activeBar={<Rectangle fill="gold" stroke="purple" />} />
         </BarChart>
