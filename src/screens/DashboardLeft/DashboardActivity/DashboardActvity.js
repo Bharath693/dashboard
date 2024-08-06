@@ -1,6 +1,7 @@
 import React from 'react'
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { XAxis as RechartsXAxis } from 'recharts';
+import { YAxis as RechartsYAxis } from 'recharts';
 
 import "./DashboardActivity.scss"
 
@@ -15,14 +16,6 @@ const DashboardActvity = () => {
     { name: '19', uv: 2390, pv: 3800, amt: 2500 },
     { name: '21', uv: 3490, pv: 4300, amt: 2100 },
   ];
-
-  const XAxisWrapper = (dataKey) => {
-    return <RechartsXAxis dataKey={dataKey} />;
-  };
-
-  const YAxisWrapper = (dataKey) => {
-    return <RechartsXAxis dataKey={dataKey} />;
-  };
 
   return (
     <div className='DashboardActvity'>
@@ -41,9 +34,8 @@ const DashboardActvity = () => {
           }}
         >
           {/* <CartesianGrid strokeDasharray="3 3" /> */}
-          <XAxis dataKey="name" />
-          <XAxisWrapper dataKey = 'name'/>
-          <YAxis />
+          {/* <XAxis dataKey="name" />
+          <YAxis /> */}
           {/* <Tooltip />
           <Legend /> */}
           <Bar dataKey="pv" fill="#8884d8"  />
