@@ -10,7 +10,7 @@ const DashboardOrderDetails = () => {
       {dashboardOrderDetails &&
         dashboardOrderDetails.map((item,index) => {
           return (
-            <div className="DashboardOrderDetails-main">
+            <div className="DashboardOrderDetails-main" key={index}>
                 <p
                   style={{ color: item.color, backgroundColor: item.rgba }}
                   className="DashboardOrderDetails-main-details-icon"

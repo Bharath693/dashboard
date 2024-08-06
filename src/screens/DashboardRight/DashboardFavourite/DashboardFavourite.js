@@ -7,9 +7,9 @@ import "./DashboardFavourite.scss";
 const DashboardFavourite = () => {
   return (
     <div className='DashboardFavourite'>
-       {dashboardFavouritesData && dashboardFavouritesData.map((item) =>{
+       {dashboardFavouritesData && dashboardFavouritesData.map((item, index) =>{
         return(
-          <div className='DashboardFavourite-main'>
+          <div className='DashboardFavourite-main' key={index}>
              <div className='DashboardFavourite-main-iconMain'>
                <div style={{color:item.color, backgroundColor:item.backgroundColor}} className='DashboardFavourite-main-icon'>
                 {item.icon}

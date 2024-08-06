@@ -19,9 +19,9 @@ const Header = () => {
             </div>
         </div>
         <div className='HeaderProfileMain col-lg-6 col-md-6 col-sm-6 col-12'>
-            {HeaderIcons && HeaderIcons.map((item) =>{
+            {HeaderIcons && HeaderIcons.map((item,index) =>{
               return(
-               <div className='Header-RightIcons'>{item.icon}</div>
+               <div className='Header-RightIcons' key={index}>{item.icon}</div>
               )
             })}
           <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />

@@ -9,7 +9,7 @@ const Sidebar = () => {
     <div className='Sidebar'>
       {SidebarData && SidebarData.map((item,index) =>{
         return(
-          <div className={`Sidebar-icomMenu`}>
+          <div className={`Sidebar-icomMenu`} key={index}>
             {item.icon}
           </div>
         )

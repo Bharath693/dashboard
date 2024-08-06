@@ -19,9 +19,9 @@ const DashboardOrders = () => {
           </tr>
          </thead>
          <tbody>
-            {dashboardRecentOrders && dashboardRecentOrders.map((item) =>{
+            {dashboardRecentOrders && dashboardRecentOrders.map((item,index) =>{
               return(
-                <tr className='DashboardOrders-table-row applyRowStyles'>
+                <tr className='DashboardOrders-table-row applyRowStyles'key={index}>
                   <td className='tableData DashboardOrders-table-avator'>
                     {item.Avator}
                     <span className='DashboardOrders-table-avator-profileName'>{item.Name}</span>
