@@ -14,15 +14,16 @@ const DashboardCustomerFeedback = () => {
               <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
               <p className='DashboardCustomerFeedback--profile-name'>ProfileName</p>
           </div>
-          <div>
+          <div className='rating'>
             <FaStar className='filledStar'/>
             <FaStar className='filledStar'/>
             <FaStar className='filledStar'/>
             <FaStar className='filledStar'/>
             <FaStar />
           </div>
-          <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+          <p className="feedbackTextColor">
+            The food was excellent and so was the service. I had the mushroom risotto with scallops which was awesome.I had a burger
+            over greens (gluten-free) which was also very good.They were very conscientioouns about gluten allergies.
           </p>
        </div>
        <div className='AddDivider DashboardCustomerFeedback-feedback2'>
@@ -30,15 +31,15 @@ const DashboardCustomerFeedback = () => {
               <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
               <p className='DashboardCustomerFeedback--profile-name'>ProfileName</p>
           </div>
-          <div>
+          <div className='rating'>
           <FaStar className='filledStar'/>
           <FaStar className='filledStar'/>
           <FaStar className='filledStar'/>
           <FaStar className='filledStar'/>
           <FaStar className='filledStar'/>
           </div>
-          <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+          <p className='feedbackTextColor'>
+            We enjoyed the Eggs benedict served on homemade focaccia bread and hot coffie. Perfect Service
           </p>
        </div>
        <div className='DashboardCustomerFeedback-feedback3'>
@@ -46,15 +47,15 @@ const DashboardCustomerFeedback = () => {
               <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
               <p className='DashboardCustomerFeedback--profile-name'>ProfileName</p>
           </div>
-          <div>
+          <div className='rating'>
           <FaStar className='filledStar'/>
           <FaStar className='filledStar'/>
           <FaStar className='filledStar'/>
           <FaStar className='filledStar'/>
           <FaStar />
           </div>
-          <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+          <p className='feedbackTextColor'>
+            Normally Wings are wings but theirs are lean meaty and tendy
           </p>
        </div>
     </div>

@@ -8,6 +8,16 @@
     max-height: 342px;
     overflow-y: scroll;
     border-radius: 5px;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+    &::-webkit-scrollbar-thumb:vertical {
+        border-radius: 5px;
+        background-color: $scrollbarColor;
+      }
+
     p{
         margin: 0;
     }
@@ -46,5 +56,12 @@
 
     .AddDivider {
         border-bottom: 1px solid $grey;
+    }
+
+    .rating {
+        margin: 5px 0px;
+    }
+    .feedbackTextColor {
+        color:$customerFeedbackTextColor
     }
 }
