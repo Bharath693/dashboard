@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaStar } from "react-icons/fa6";
-import { IoIosStarOutline } from "react-icons/io";
 
 import Avatar from '@mui/material/Avatar';
 
