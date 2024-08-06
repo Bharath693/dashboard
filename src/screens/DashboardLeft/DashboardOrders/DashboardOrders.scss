@@ -1,0 +1,74 @@
+@import "../../../Styles/color";
+
+.DashboardOrders {
+    background-color: $backgroundColor;
+    width: 96% !important;
+    margin-left: 10px;
+    border-radius: 5px;
+
+    .DashboardOrders-heading {
+        color: $white;
+        margin-top: 12px;
+        font-size: 18px;
+    }
+
+    .DashboardOrders--table {
+        width: 100%;
+        background-color: $backgroundColor;
+        color: $white;
+        margin: 0px 0px 20px 0px;
+        padding: 0;
+
+        .DashboardOrders--table-header {
+            font-size: 12px;
+            font-weight: 600;
+            border-bottom: 1px solid $grey;
+        }
+
+        .DashboardOrders-table-row {
+            // padding: 10px 0px;
+            font-size: 12px;
+
+            .DashboardOrders-table-avator {
+                display: flex;
+                align-items: center;
+
+                .DashboardOrders-table-avator-profileName {
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .statuslabel {
+            padding: 2px 10px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .cancelledLabel {
+            background-color: $orderCancelled;
+        }
+
+        .orderDelevered {
+            background-color: $orderDelevered;
+        }
+    }
+
+    .tableHeader {
+        padding-bottom: 8px;
+    }
+
+    .applyRowStyles {
+        border-bottom: 0.1px solid $grey;
+    }
+
+    .applyRowStyles:last-child {
+        border-bottom: none
+    }
+
+    .tableData {
+        padding: 5px 0px;
+    }
+}

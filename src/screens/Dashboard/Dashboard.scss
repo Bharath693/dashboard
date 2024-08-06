@@ -1,0 +1,33 @@
+@import "../../Styles/color";
+
+.Dashboard {
+    background-color: $DashboardBackgroudColor;
+    padding-left: 10px;
+    margin-right: 0px !important;
+    padding-bottom: 30px;
+
+    .Dashboard-heading {
+        color: $white;
+        margin: 20px 0px;
+    }
+
+     //media queries
+     @media screen and (min-width:769px) and (max-width:992px) {
+        .DashboardProfit {
+            margin-top: 15px;
+        }
+    }
+
+    @media screen and (min-width:576px) and (max-width:768px) {
+        .DashboardProfit {
+            margin-top: 15px;
+        }
+    }
+
+    @media screen and (min-width:350px) and (max-width:577px) {
+        .DashboardProfit {
+            margin-top: 15px;
+        }
+    }
+}
+

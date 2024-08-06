@@ -1,0 +1,57 @@
+@import "../../../Styles/color";
+
+.DashboardFavourite {
+    background-color: $backgroundColor;
+    color: $white;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+    .DashboardFavourite-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .DashboardFavourite-main-iconMain {
+            display: flex;
+            align-items: center;
+    
+            .DashboardFavourite-main-icon {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        
+            .DashboardFavourite-main-icon svg{
+                width: 100%;
+                height: 46%;
+            }
+    
+            .DashboardFavourite-main-icon-label {
+                margin-left: 20px;
+                font-weight: 300;
+            }
+    
+           
+        }
+
+        .DashboardFavourite-main-arrow {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $grey;
+            margin-right: 15px;
+ 
+            .DashboardFavourite-main-arrow svg {
+             width: 100%;
+             height: 50%;
+         }
+       }
+    }
+}

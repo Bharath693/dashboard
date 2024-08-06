@@ -1,0 +1,24 @@
+@import "../../Styles/color";
+
+.Sidebar {
+    background-color: $backgroundColor;
+    position: fixed;
+   
+    height: 92vh;
+
+    .Sidebar-icomMenu {
+      color: $sidebarIconColor;
+      margin-bottom: 30px;
+      padding: 0px 20px;
+      
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .Sidebar-icomMenu:first-child {
+        color: $iconActive;
+        border-left: 2.5px solid $iconActive;
+     }
+}

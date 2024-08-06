@@ -1,0 +1,26 @@
+@import "../../../Styles/color";
+
+.DashboardActvity {
+    background-color: $backgroundColor;
+    width: 96% !important;
+    height: 184px;
+    margin: 10px 9px 22px 10px;
+    overflow-y: auto;
+    border-radius: 5px;
+
+    p{
+        margin: 0;
+    }
+
+    .DashboardActvity-heading-activity {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0px;
+    }
+
+    .DashboardActvity-heading {
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+    }
+}

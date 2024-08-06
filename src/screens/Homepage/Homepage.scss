@@ -1,0 +1,62 @@
+.Homepage {
+
+    .Homepage-header {
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .Homepage-Main {
+        display: flex;
+        position: absolute;
+        top: 70px;
+
+        
+        .Homepage-main-sidebar {
+           width: 5%;
+        }
+
+        //media queries
+        @media screen and (min-width:1160px) and (max-width:1200px) {
+            .Homepage-main-sidebar {
+                width: 6%;
+            }
+        }
+
+        @media screen and (min-width:993px) and (max-width:1159px) {
+            .Homepage-main-sidebar {
+                width: 7%;
+            }
+        }
+
+         //media queries
+         @media screen and (min-width:769px) and (max-width:992px) {
+            .Homepage-main-sidebar {
+                width: 8%;
+            }
+        }
+
+        @media screen and (min-width:576px) and (max-width:768px) {
+            .Homepage-main-sidebar {
+                width:11%;
+            }
+        }
+
+        @media screen and (min-width:350px) and (max-width:577px) {
+            .Homepage-main-sidebar {
+                width:11%;
+            }
+        }
+
+        .Homepage-dashboard {
+           width: 95%;
+
+           @media screen and (min-width:350px) and (max-width:576px) {
+            .Dashboard {
+                margin-top: 36px;
+                margin-left: 8px;
+            }
+        }
+        }
+    }
+}

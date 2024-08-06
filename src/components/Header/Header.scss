@@ -1,0 +1,77 @@
+@import "../../Styles/color";
+
+.Header {
+    background-color: $backgroundColor;
+    padding: 15px 0px;
+
+    .Header-SearchbarMain {
+        display: flex;
+        color: $white;
+        padding-left: 25px;
+
+        .Header-leftIcon {
+            width: 44px;
+            height: 28px;
+            color: $iconActive;
+            margin-right: 30px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .Header-SearchbarMain-Input {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 37%;
+            height: 36px;
+            .Input {
+                border: none;
+                outline: none;
+                background: none;
+                width: 100%;
+                color: $searchbarBackgroundColor;
+            }
+            // .Input::placeholder {
+            //     color: $white;
+            // }
+        }
+
+        .Header-SearchbarMain-Input svg {
+            width: 20px;
+            height: 20px;
+            margin: 0px 8px;
+        }
+        
+    }
+
+    .HeaderProfileMain {
+     display: flex;
+     justify-content: flex-end;
+     padding-right: 60px;
+        .Header-RightIcons {
+            display: flex;
+            align-items: center;
+            color: $white;
+            margin-right: 10px;
+            padding: 10px;
+            background-color: $HeaderIocnsBackgroundcolor;
+            border-radius: 50%;
+        }
+    }
+
+    @media screen and (min-width:350px) and (max-width:576px) {
+        .HeaderProfileMain {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 30px;
+            margin-top: 5px;
+            padding-left: 94px;
+        }
+        
+    }
+}
+

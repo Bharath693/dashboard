@@ -1,0 +1,45 @@
+@import "../../../Styles/color";
+
+.DashboardProfit {
+    display: flex;
+    background-color: $backgroundColor;
+    color: $white;
+    border-radius: 5px;
+
+    p{
+        margin: 0px;
+    }
+
+    .DashboardProfit-netProfit {
+        padding: 10px 10px;
+
+        .DashboardProfit-netProfit-label {
+           font-size: 10px;
+        }
+
+        .DashboardProfit-netProfit-price {
+            // font-size: 18px;
+            margin: 10px 0px
+        }
+
+        .DashboardProfit-netProfit-Icon {
+            color: $green;
+            font-weight: 700;
+        }
+    }
+
+    .DashboardProfit-Main {
+        margin: 10px 0px 18px 0px;
+
+        .DashboardProfit--progressbar {
+            width: 86px;
+            margin-left: 20px;
+        }
+    
+        .DashboardProfit--progressbar-label {
+            font-size: 8px;
+        }
+    } 
+    
+    
+}
